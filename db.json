@@ -1,22 +1,23 @@
 {
-  "users": [],
-  "tables": [],
-  "role": [
+  "users": [
     {
-      "barbarian": {},
-      "bard": {},
-      "cleric": {},
-      "druid": {},
-      "fighter": {},
-      "monk": {},
-      "paladin": {},
-      "ranger": {},
-      "rogue": {},
-      "sorcerer": {},
-      "warlock": {},
-      "wizard": {},
-      "artificer": {},
-      "blood hunter": {}
+      "email": "teste@mail.com",
+      "password": "$2a$10$GPdIDOFkgGhte0h3vr9X5e3Q03cPam8zWbzLVnbrxItHZhtTiCoz.",
+      "username": "testando",
+      "myTables": [
+        1,
+        2,
+        3
+      ],
+      "id": 1
+    },
+    {
+      "email": "teste1@mail.com",
+      "password": "$2a$10$TltHNN6ZptEJa3AhjpI0e.5UN3x/dvr11.IijSUYioezXTCW4rqh6",
+      "username": "testando1",
+      "myTables": [],
+      "id": 2
     }
-  ]
+  ],
+  "tables": []
 }

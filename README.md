@@ -2,24 +2,18 @@
 
 ### Listar mesas
 GET=> /tables
-
 ### Buscar mesa
 GET=> /tables?tablename_like=:tablename
-
 ### Limitar página
 GET=> /tables?_page=:page&_limit=:maxTables
-
 ### Registrar 
 POST=> /register +
     {
        email,
-       password, ...,
-       tables:[]
+       password, username,
+       myTables:[]
     }
-    
-        id (automático) pelo json-server
-        tables deve ser inserida no body da requisição, usuário não deve ter acesso a ela enquanto faz registro. 
-   
+    id (automático) pelo json-server
 
 ### Logar
 POST=> /login +
@@ -27,25 +21,22 @@ POST=> /login +
        email,
        password
     }
-
 ## Rotas com TOKEN
-
 ###  Listar usuários
 GET=> /users
-
 ###  Listar mesas que participa
 GET=> /users/:id?_embed=tables
 GET=> /users?id=:id&tables
-
 ###  Buscar usuário
 GET=> /users?username_like=:username
-
 ### Criar nova mesa
 POST => /tables +
     {
        tablename,
-       password (Opcional),
+       owner,
        system, 
+       invite,
+       password (Opcional),
        maxParticipants,
        participants (valor não pode ser superior ao máximo de participantes)
     }
