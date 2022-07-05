@@ -48,4 +48,5 @@
     }
     id (automático) pelo json-servers
 
-### DELETE => /tables + id
+### DELETE => 
+/tables + id
