@@ -1,26 +1,28 @@
 ## Rotas sem TOKEN
 
-### GET=> 
-/tables => lista mesas
+### Listar mesas
+GET=> /tables
 
-### GET=> 
-/tables?tablename_like=:tablename
+### Buscar mesa
+GET=> /tables?tablename_like=:tablename
 
-### GET=> 
-/tables?\_page=:page&\_limit=:maxTables
+### Limitar página
+GET=> /tables?_page=:page&_limit=:maxTables
 
-### POST=> 
-/register +
+### Registrar 
+POST=> /register +
     {
        email,
        password, ...,
-       tables:[]
+       <!-- tables:[] -->
     }
-    id (automático) pelo json-server
-    tables deve ser inserida no body da requisição, usuário não deve ter acesso a ela enquanto faz registro.
+    <!--
+        id (automático) pelo json-server
+        tables deve ser inserida no body da requisição, usuário não deve ter acesso a ela enquanto faz registro. 
+    -->
 
-### POST=> 
-/login +
+### Logar
+POST=> /login +
     {
        email,
        password
@@ -28,17 +30,18 @@
 
 ## Rotas com TOKEN
 
-### GET=> 
-/users => lista usuários
+###  Listar usuários
+GET=> /users
 
-### GET=> 
-/users?id=:id&tables => lista suas mesas
+###  Listar mesas que participa
+GET=> /users/:id?_embed=tables
+GET=> /users?id=:id&tables
 
-### GET=> 
-/users?username_like=:username
+###  Buscar usuário
+GET=> /users?username_like=:username
 
-### POST => 
-/tables +
+### Criar nova mesa
+POST => /tables +
     {
        tablename,
        password (Opcional),
@@ -46,7 +49,7 @@
        maxParticipants,
        participants (valor não pode ser superior ao máximo de participantes)
     }
-    id (automático) pelo json-servers
+    <!-- id (automático) pelo json-servers -->
 
-### DELETE => 
-/tables + id
+### Deletar mesa
+DELETE => /tables + id
