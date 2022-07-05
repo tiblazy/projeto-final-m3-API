@@ -11,11 +11,7 @@ app.db = router.db;
 const rules = auth.rewriter({
   users: 640,
   tables: 664,
-  role: 440,
-
-  listUsers: "/users",
-  listTables: "/tables",
-  myTables: "/users?tables_like=:id",
+  role: 440
 });
 
 app.use(cors());
