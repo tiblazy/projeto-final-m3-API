@@ -14,6 +14,15 @@ POST=> /register +
        myTables:[]
     }
     id (automático) pelo json-server
+    
+```json
+{
+    "email": "kenzinho@kenzie.com.br",
+    "password": "kenzinho123",
+    "username": "kenzinho",
+    "myTables": []
+}
+```
 
 ### Logar
 POST=> /login +
@@ -21,6 +30,14 @@ POST=> /login +
        email,
        password
     }
+    
+ ```json
+{
+    "email": "kenzinho@kenzie.com.br",
+    "password": "kenzinho123",
+}
+```
+    
 ## Rotas com TOKEN
 ###  Listar usuários
 GET=> /users
@@ -41,6 +58,18 @@ POST => /tables +
        participants (valor não pode ser superior ao máximo de participantes)
     }
     id (automático) pelo json-servers
+    
+ ```json
+{
+    "tablename": "Kenzie",
+    "owner": "id",
+    "system": "D&D",
+    "invite": "",
+    "password": "",
+    "maxParticipants": 10,
+    "participants": []
+}
+```
 
 ### Deletar mesa
 DELETE => /tables + id
