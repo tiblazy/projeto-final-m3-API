@@ -1,19 +1,13 @@
 ## Rotas sem TOKEN
 
 ### Listar mesas
-GET=> /tables
+`GET /tables`
 ### Buscar mesa
-GET=> /tables?tablename_like=:tablename
+`GET /tables?tablename_like=:tablename`
 ### Limitar página
-GET=> /tables?_page=:page&_limit=:maxTables
+`GET /tables?_page=:page&_limit=:maxTables`
 ### Registrar 
-POST=> /register +
-    {
-       email,
-       password, username,
-       myTables:[]
-    }
-    id (automático) pelo json-server
+`POST /register`
     
 ```json
 {
@@ -23,13 +17,10 @@ POST=> /register +
     "myTables": []
 }
 ```
+  <sub>id automático pelo json-server</sub>
 
 ### Logar
-POST=> /login +
-    {
-       email,
-       password
-    }
+`POST /login` 
     
  ```json
 {
@@ -40,24 +31,14 @@ POST=> /login +
     
 ## Rotas com TOKEN
 ###  Listar usuários
-GET=> /users
+`GET /users`
 ###  Listar mesas que participa
-GET=> /users/:id?_embed=tables
-GET=> /users?id=:id&tables
+`GET /users/:id?_embed=tables`
+`GET /users?id=:id&tables`
 ###  Buscar usuário
-GET=> /users?username_like=:username
+`GET /users?username_like=:username`
 ### Criar nova mesa
-POST => /tables +
-    {
-       tablename,
-       owner,
-       system, 
-       invite,
-       password (Opcional),
-       maxParticipants,
-       participants (valor não pode ser superior ao máximo de participantes)
-    }
-    id (automático) pelo json-servers
+`POST => /tables`
     
  ```json
 {
@@ -70,6 +51,7 @@ POST => /tables +
     "participants": []
 }
 ```
+<sub>id automático pelo json-server</sub>
 
 ### Deletar mesa
-DELETE => /tables + id
+`DELETE /tables/id`
