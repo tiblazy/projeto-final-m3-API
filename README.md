@@ -12,7 +12,8 @@
 `GET /tables?_page=:page&_limit=:maxTables`
 ### Registrar 
 `POST /register`
-    
+
+  **Body:**    
 ```json
 {
     "email": "kenzinho@kenzie.com.br",
@@ -26,6 +27,7 @@
 ### Logar
 `POST /login` 
     
+  **Body:**
  ```json
 {
     "email": "kenzinho@kenzie.com.br",
@@ -34,6 +36,14 @@
 ```
     
 ## Rotas com TOKEN
+
+**Headers:**
+```json
+{
+    "Authorization": "Bearer token"
+}
+```
+
 ###  Listar usuários
 `GET /users`
 ###  Listar mesas que participa
@@ -43,7 +53,8 @@
 `GET /users?username_like=:username`
 ### Criar nova mesa
 `POST => /tables`
-    
+   
+  **Body:**
  ```json
 {
     "tablename": "Kenzie",
@@ -55,6 +66,7 @@
     "participants": []
 }
 ```
+
 <sub>id automático pelo json-server</sub>
 
 ### Deletar mesa
