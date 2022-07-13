@@ -2,7 +2,7 @@
   "users": [
     {
       "email": "Jogador1@gmail.com",
-      "password": "$2a$10$lEK8nBJyz/vrFNZCuwGI3uvjvexcnwH76aUCUcUvdwSEhRbk1Nejq",
+      "password": "$2a$10$rfD0zpJj9QyrfzxUaQE98uNDPDue6mrGcIZolbnaO6uOPJ1QJgUN6",
       "avatar": null,
       "username": "Jogador1",
       "myTables": [
@@ -14,7 +14,7 @@
     },
     {
       "email": "Jogador2@gmail.com",
-      "password": "$2a$10$aMhEHb8mLfE35bR4roewkuedx1UKMvT8PtLSa2F3Qyk0s8UO7ns.O",
+      "password": "$2a$10$pZmaAR6akQUNHToMvShdKuVDZooc7SFANJv58pqcfZTRm0szlf3Pq",
       "avatar": "https://pbs.twimg.com/media/EwUSTEgWQAMcVZU.jpg",
       "username": "Jogador2",
       "myTables": [
@@ -26,8 +26,7 @@
     },
     {
       "email": "Jogador3@gmail.com",
-      "password": "$2a$10$mu3dahMs7UmCdUa6XqF2meUXStol3Rxfb0BEFQghc3J3bs1JL9tEi",
-      "avatar": "https://pbs.twimg.com/media/EwUSTEgWQAMcVZU.jpg",
+      "password": "$2a$10$GvZDwy2FI0.M/mVK/PxwVeoPnw0SSZOBJ8z79itcJwOWdu4YxrFt.",
       "username": "Jogador3",
       "myTables": [
         {
@@ -68,6 +67,7 @@
       ],
       "characters": [
         {
+          "email": "Jogador1@gmail.com",
           "name": "Legolas",
           "idade": "21",
           "classe": "Arqueiro",
@@ -81,6 +81,7 @@
           "lore": null
         },
         {
+          "email": "Jogador2@gmail.com",
           "name": "Golias",
           "idade": "32",
           "classe": "Guerreiro",
@@ -94,6 +95,7 @@
           "lore": null
         },
         {
+          "email": "Jogador3@gmail.com",
           "name": "Gandalf",
           "idade": "55",
           "classe": "mago",
