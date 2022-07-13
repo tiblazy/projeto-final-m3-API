@@ -1,23 +1,113 @@
 {
   "users": [
     {
-      "email": "teste@mail.com",
-      "password": "$2a$10$GPdIDOFkgGhte0h3vr9X5e3Q03cPam8zWbzLVnbrxItHZhtTiCoz.",
-      "username": "testando",
+      "email": "Jogador1@gmail.com",
+      "password": "$2a$10$lEK8nBJyz/vrFNZCuwGI3uvjvexcnwH76aUCUcUvdwSEhRbk1Nejq",
+      "avatar": null,
+      "username": "Jogador1",
       "myTables": [
-        1,
-        2,
-        3
+        {
+          "tableId": 1
+        }
       ],
       "id": 1
     },
     {
-      "email": "teste1@mail.com",
-      "password": "$2a$10$TltHNN6ZptEJa3AhjpI0e.5UN3x/dvr11.IijSUYioezXTCW4rqh6",
-      "username": "testando1",
-      "myTables": [],
+      "email": "Jogador2@gmail.com",
+      "password": "$2a$10$aMhEHb8mLfE35bR4roewkuedx1UKMvT8PtLSa2F3Qyk0s8UO7ns.O",
+      "avatar": "https://pbs.twimg.com/media/EwUSTEgWQAMcVZU.jpg",
+      "username": "Jogador2",
+      "myTables": [
+        {
+          "tableId": 1
+        }
+      ],
       "id": 2
+    },
+    {
+      "email": "Jogador3@gmail.com",
+      "password": "$2a$10$mu3dahMs7UmCdUa6XqF2meUXStol3Rxfb0BEFQghc3J3bs1JL9tEi",
+      "avatar": "https://pbs.twimg.com/media/EwUSTEgWQAMcVZU.jpg",
+      "username": "Jogador3",
+      "myTables": [
+        {
+          "tableId": 1
+        }
+      ],
+      "id": 3
     }
   ],
-  "tables": []
+  "tables": [
+    {
+      "tablename": "Senhor dos Anéis",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYJ0ON8oaPShLOK1CGvUnf5M28KtPxHkjaoQ&usqp=CAU",
+      "userId": 1,
+      "system": "D&D",
+      "visibility": "Private",
+      "password": "123123",
+      "lore": "Aquela história gigantesca lá",
+      "notice_board": null,
+      "maxParticipants": 5,
+      "id": 1,
+      "participants": [
+        {
+          "userId": 1,
+          "email": "Jogador1@gmail.com",
+          "username": "Jogador1"
+        },
+        {
+          "userId": 2,
+          "email": "Jogador2@gmail.com",
+          "username": "Jogador2"
+        },
+        {
+          "userId": 3,
+          "email": "Jogador3@gmail.com",
+          "username": "Jogador3"
+        }
+      ],
+      "characters": [
+        {
+          "name": "Legolas",
+          "idade": "21",
+          "classe": "Arqueiro",
+          "atributtes": {
+            "fortitude": 3,
+            "inteligencia": 10,
+            "presença": 7,
+            "destreza": 15
+          },
+          "bag": [],
+          "lore": null
+        },
+        {
+          "name": "Golias",
+          "idade": "32",
+          "classe": "Guerreiro",
+          "atributtes": {
+            "fortitude": 15,
+            "inteligencia": 3,
+            "presença": 10,
+            "destreza": 2
+          },
+          "bag": [],
+          "lore": null
+        },
+        {
+          "name": "Gandalf",
+          "idade": "55",
+          "classe": "mago",
+          "atributtes": {
+            "fortitude": 2,
+            "inteligencia": 15,
+            "presença": 10,
+            "destreza": 2
+          },
+          "bag": [],
+          "lore": null
+        }
+      ],
+      "username": "Jogador1"
+    }
+  ]
 }
